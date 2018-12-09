@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 2018-11-3 19:30:18 by Hibernate Tools 3.4.0.CR1 -->
+<hibernate-mapping>
+    <class name="jiemian.entities.ZYtongjifen" table="ZYTONGJIFEN">
+        <id name="fenid" type="int">
+            <column name="FENID" />
+            <generator class="native" />
+        </id>
+        <property name="name" type="java.lang.String">
+            <column name="NAME" />
+        </property>
+        <property name="fenshu" type="java.lang.String">
+            <column name="FENSHU" />
+        </property>
+    </class>
+</hibernate-mapping>

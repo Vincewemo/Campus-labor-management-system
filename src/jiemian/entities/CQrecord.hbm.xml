@@ -1,0 +1,34 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 2018-10-31 22:38:05 by Hibernate Tools 3.4.0.CR1 -->
+<hibernate-mapping>
+    <class name="jiemian.entities.CQrecord" table="CQRECORD">
+        <id name="RecordID" type="int">
+            <column name="RECORDID" />
+            <generator class="native" />
+        </id>
+       
+        <property name="Monday" type="java.lang.String">
+            <column name="MONDAY" />
+        </property>
+        <property name="Tuesday" type="java.lang.String">
+            <column name="TUESDAY" />
+        </property>
+        <property name="Wednesday" type="java.lang.String">
+            <column name="WEDNESDAY" />
+        </property>
+        <property name="Thursday" type="java.lang.String">
+            <column name="THURSDAY" />
+        </property>
+         <property name="Friday" type="java.lang.String">
+            <column name="FRIDAY" />
+        </property>
+        <property name="Sxingming" type="java.lang.String">
+            <column name="SXINGMING" />
+        </property>
+        <property name="performance" type="java.lang.String">
+            <column name="PERFORMANCE" />
+        </property>
+    </class>
+</hibernate-mapping>

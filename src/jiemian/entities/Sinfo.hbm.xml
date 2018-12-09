@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 2018-10-31 11:34:10 by Hibernate Tools 3.4.0.CR1 -->
+<hibernate-mapping>
+    <class name="jiemian.entities.Sinfo" table="SINFO">
+        <id name="SinfoID" type="int">
+            <column name="SINFOID" />
+            <generator class="native" />
+        </id>
+        <property name="Sxueyuan" type="java.lang.String">
+            <column name="SXUEYUAN" />
+        </property>
+        <property name="Szhuanye" type="java.lang.String">
+            <column name="SZHUANYE" />
+        </property>
+        <property name="Sphone" type="java.lang.String">
+            <column name="SPHONE" />
+        </property>
+        <property name="Sxuehao" type="java.lang.String">
+            <column name="SXUEHAO" />
+        </property>
+    </class>
+</hibernate-mapping>

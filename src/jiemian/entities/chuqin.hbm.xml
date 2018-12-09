@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 2018-10-31 21:45:12 by Hibernate Tools 3.4.0.CR1 -->
+<hibernate-mapping>
+    <class name="jiemian.entities.chuqin" table="CHUQIN">
+        <id name="chuqinID" type="int">
+            <column name="CHUQINID" />
+            <generator class="native" />
+        </id>
+    
+        <property name="isHeshi" type="java.lang.String">
+            <column name="ISHESHI" />
+        </property>
+      
+        <property name="grade" type="java.lang.String">
+            <column name="GRADE" />
+        </property>
+        <property name="banjihao" type="java.lang.String">
+            <column name="BANJIHAO" />
+        </property>
+         <property name="name" type="java.lang.String">
+            <column name="NAME" />
+        </property>
+         <property name="chuqinCount" type="java.lang.String">
+            <column name="CHUQINCOUNT" />
+        </property>
+       
+    </class>
+</hibernate-mapping>

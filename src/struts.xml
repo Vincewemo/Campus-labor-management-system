@@ -1,0 +1,371 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+	"-//Apache Software Foundation//DTD Struts Configuration 2.3//EN"
+	"http://struts.apache.org/dtds/struts-2.3.dtd">
+
+
+
+<struts>
+    <constant name="struts.enable.DynamicMethodInvocation" value="false" />
+    <constant name="struts.devMode" value="true" />
+   
+<!--     <constant name="struts.objectFactory" value="spring" /> -->
+    <package name="default"  extends="struts-default">
+
+
+    <action name="findallg" class="allloginuseraction" method="AllGuser">
+    <result name="success">/AllUserInfo.jsp</result>
+    <result name="error">/myError.jsp</result>
+    </action>
+   <action name="findalls" class="allloginuseraction" method="AllSuser">
+    <result name="success">/AllUserInfo.jsp</result>
+    
+    </action>
+     <action name="findallt" class="allloginuseraction" method="AllTuser">
+    <result name="success">/AllUserInfo.jsp</result>
+     <result name="error">/myError.jsp</result>
+    </action>
+    
+    
+     <action name="rew0" class="renwuaction" method="execute">
+    
+    <result name="success">/student/xueshengshouye.jsp</result>
+  
+    
+    </action>
+    <action name="rew" class="renwuaction" method="execute">
+    <result name="success">/teacher/jiaoshishouye.jsp</result>
+    
+    </action>
+    
+    <action name="rew1" class="renwuaction" method="cha">
+    
+    <result name="ok">/laodonganpai/xueyuanxiugai.jsp</result>
+    <result name="notok">/laodonganpai/meizhaodao.jsp</result>
+    
+    </action>
+    
+    <action name="rew2" class="renwuaction" method="xiu">
+    
+    <result name="nice">/teacher/jiaoshishouye.jsp</result>
+    <result name="nonice">/laodonganpai/error.jsp</result>
+    
+    </action>
+    
+     <action name="rew3" class="renwuaction" method="PureRw">
+    
+    <result name="you">/Admin/Adminshouye.jsp</result>
+    <result name="myou">/Admin/meiyourenwu.jsp</result>
+    
+    </action>
+    
+      <action name="rew4" class="renwuaction" method="chaBanJi">
+    
+    <result name="zdBanji">/laodonganpai/banjichaxun.jsp</result>
+    <result name="mzdBanji">/laodonganpai/meizhaodaobanji.jsp</result>
+    
+    </action>
+      <action name="rew5" class="renwuaction" method="renyuan">
+    
+    <result name="success">/laodonganpai/renyuan.jsp</result>
+    
+    </action>
+    
+    
+    <action name="rew6" class="renwuaction" method="banjishu">
+    
+    <result name="success">/laodonganpai/renyuan.jsp</result>
+    
+    </action>
+    
+    
+    <action name="log0" class="loginaction" method="Tlogin">
+    <result name="chenggong">/teacher/jiaoshishouye.jsp</result>
+    <result name="shibai">/yhmhmmcw.jsp</result>
+    
+    </action>
+    <action name="log1" class="loginaction" method="Glogin">
+    <result name="chenggong">/Admin/Adminshouye.jsp</result>
+    <result name="shibai">/yhmhmmcw.jsp</result>
+    </action>
+    
+    
+    <action name="log2" class="loginaction" method="Slogin">
+    <result name="chenggong">/student/xueshengshouye.jsp</result>
+    <result name="shibai">/yhmhmmcw.jsp</result>
+    
+    </action>
+    
+    
+    <action name="RT" class="registeraction" method="Tzhuce">
+    <result name="tchenggong">/register/chenggong.jsp</result>
+     <result name="tshibai">/register/shibai.jsp</result>
+    </action>
+    
+    
+     <action name="ST" class="registeraction" method="Szhuce">
+    <result name="schenggong">/register/chenggong1.jsp</result>
+     <result name="sshibai">/register/shibai1.jsp</result>
+    </action>
+    
+     <action name="AT" class="registeraction" method="Azhuce">
+    <result name="achenggong">/register/chenggong2.jsp</result>
+     <result name="ashibai">/register/shibai2.jsp</result>
+    </action>
+    
+    <action name="Tif" class="xinxiaction" method="getTinfo">
+    <result name="success">/teacher/jiaoshixinxi.jsp</result>
+    </action>
+    
+    <action name="Tifc" class="xinxiaction" method="changeInfo">
+    <result name="success">/teacher/jiaoshixinxi.jsp</result>
+    </action>
+    
+     <action name="Sif" class="sxinxiaction" method="getSinfo">
+    <result name="success">/student/xueshengixinxi.jsp</result>
+    </action>
+    
+    <action name="Sifc" class="sxinxiaction" method="changeInfo">
+    <result name="success">/student/xueshengixinxi.jsp</result>
+    </action>
+    
+      <action name="mark5" class="markaction" method="chushiqiandao">
+    <result name="success">/student/chooseDay.jsp</result>
+    </action>
+    
+    
+      <action name="mark0" class="markaction" method="qiandao1">
+    <result name="success">/student/xueshengshouye.jsp</result>
+    <result name="eor">/student/eorinfo.jsp</result>
+    </action>
+    
+    
+      <action name="mark1" class="markaction" method="qiandao2">
+    <result name="success">/student/xueshengshouye.jsp</result>
+    <result name="eor">/student/eorinfo.jsp</result>
+    </action>
+    
+      <action name="mark2" class="markaction" method="qiandao3">
+    <result name="success">/student/xueshengshouye.jsp</result>
+    <result name="eor">/student/eorinfo.jsp</result>
+    </action>
+    
+      <action name="mark3" class="markaction" method="qiandao4">
+    <result name="success">/student/xueshengshouye.jsp</result>
+    <result name="eor">/student/eorinfo.jsp</result>
+    </action>
+    
+      <action name="mark4" class="markaction" method="qiandao5">
+    <result name="success">/student/xueshengshouye.jsp</result>
+    <result name="eor">/student/eorinfo.jsp</result>
+    </action>
+    
+    
+       <action name="sm0" class="smarkaction" method="findQDinfo">
+    <result name="ok">/student/chuqinchakan.jsp</result>
+    </action>
+    
+    
+    <action name="gsm0" class="guseraction" method="AllMark">
+    
+    <result name="eor">/Admin/meiyourenwu.jsp</result>
+    <result name="success">/Admin/studentchuqinInfo.jsp</result>
+    </action>
+    
+    
+    
+      <action name="gsm1" class="guseraction" method="markCHUQIN">
+    
+ 
+    <result name="success">/Admin/markinfo.jsp</result>
+    </action>
+
+      <action name="gsm2" class="guseraction" method="jifen">
+    <result name="success">/Admin/markinfo.jsp</result>
+    </action>
+    
+    
+     <action name="heshi" class="heshiInfo" method="HeshiXinxi">
+    <result name="success">/Admin/markinfo.jsp</result>
+     <result name="notok">/Admin/errorheshi.jsp</result>
+    </action>
+    
+    
+    
+    
+     <action name="heshi2" class="heshiInfo" method="AllSzyInfo">
+    <result name="success">/Admin/Szhiyuan.jsp</result>
+     
+    </action>
+    
+    <action name="heshi3" class="heshiInfo" method="HZYXinxi">
+    <result name="success">/Admin/ZYheshichenggong.jsp</result>
+     <result name="nos">/Admin/HeshiErrorjsp.jsp</result>
+    </action>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <action name="Tchuqin" class="teacheraction" method="chachuqin">
+    <result name="success">/teacher/tchuqin.jsp</result>
+    <result name="no">/teacher/Tmeiyou.jsp</result>
+    </action>
+    
+     <action name="Tchengji" class="teacheraction" method="chagrade">
+    <result name="success">/teacher/tgrade.jsp</result>
+    <result name="no">/teacher/Tmeiyou.jsp</result>
+    </action>
+    
+    
+    
+    <action name="zhiyuan1" class="zhiyuanaction" method="Allzhiyuan">
+    <result name="success">/student/allzhiyuan.jsp</result>
+     <result name="novalue">/student/Smeiyou.jsp</result>
+    </action>
+    
+    
+    
+     
+    <action name="zhiyuan2" class="zhiyuanaction" method="Xzhiyuan">
+    <result name="success">/student/addZok.jsp</result>
+    <result name="no">/student/Smeiyou.jsp</result> 
+    </action>
+    
+    
+    <action name="zhiyuan3" class="zhiyuanaction" method="yxz">
+    <result name="success">/student/Allreadychoose.jsp</result>
+    <result name="meizhi">/student/meiyouzhiyuan.jsp</result> 
+    </action>
+    
+    
+      <action name="zhiyuan4" class="zhiyuanaction" method="Dzhiyuan">
+    <result name="success">/student/Dsucces.jsp</result>
+    <result name="noo">/student/Derror.jsp</result> 
+    </action>
+    
+    
+     <action name="zhiyuan5" class="zhiyuanaction" method="GfindAllzy">
+    <result name="success">/Admin/zhxiangmu.jsp</result>
+    </action>
+    
+    
+     <action name="zhiyuan6" class="zhiyuanaction" method="addXinzhiyuan">
+    <result name="success">/Admin/zhxiangmu.jsp</result>
+    <result name="no">/Admin/addzhiyuanerror.jsp</result>
+    </action>
+    
+    
+    <action name="zhiyuan7" class="zhiyuanaction" method="Allchoose">
+    <result name="success">/teacher/ZYqingkuang.jsp</result>
+    </action>
+    
+    
+    <action name="zhjifen" class="teacheraction" method="Xzyfen">
+    <result name="success">/teacher/zyjifen.jsp</result>
+     <result name="nozys">/teacher/jifenerroe.jsp</result>
+    </action>
+    
+    
+    <action name="tool1" class="toolaction" method="xianshiTool">
+    <result name="success">/student/ToolsInfo.jsp</result>
+    <result name="notool">/student/ToolError.jsp</result>
+    
+    </action>
+    
+    
+    <action name="tool2" class="toolaction" method="jiechuT">
+    <result name="success">/student/BorrowToolSuccess.jsp</result>
+    <result name="notool">/student/BorrowToolError.jsp</result>
+    
+    </action>
+    
+    
+    
+     <action name="tool3" class="toolaction" method="XBorrowgj">
+    <result name="success">/student/allreayborrow.jsp</result>
+    
+    </action>
+    
+    
+    <action name="tool4" class="toolaction" method="Xhuanru">
+    
+    <result name="success">/student/sendbackT.jsp</result>
+    </action>
+    
+    <action name="tool5" class="toolaction" method="huanruT">
+    
+    <result name="success">/student/BackSuccess.jsp</result>
+     <result name="nosend">/student/BackError.jsp</result>
+    </action>
+    
+    
+     <action name="gtool1" class="toolaction" method="xianshiTool">
+    
+    <result name="success">/Admin/GtoolsInfo.jsp</result>
+     <result name="nosend">/Admin/meiyourenwu.jsp</result>
+    </action>
+    
+     <action name="gtool2" class="toolaction" method="AddTool">
+    
+    <result name="success">/Admin/GtoolsInfo.jsp</result>
+     <result name="youle">/Admin/AddToolsError.jsp</result>
+    </action>
+    
+    <action name="gtool3" class="toolaction" method="ChangeWear">
+    
+    <result name="success">/Admin/ChangeWearSuccess.jsp</result>
+     <result name="shibai">/Admin/ChangeWearError.jsp</result>
+    </action>
+    
+        <action name="gtool4" class="toolaction" method="TongjiBandS">
+    
+    <result name="success">/Admin/BandSinfo.jsp</result>
+   
+    </action>
+    
+    
+    <action name="leave1" class="leaveaction" method="addqingjiaxinxi">
+    <result name="success">/student/AddLeaveInfoSuccess.jsp</result>
+    <result name="error">/student/addQJerror.jsp</result>
+    </action>
+    
+    <action name="leave2" class="leaveaction" method="showSQJinfo">
+    <result name="success">/student/Sleaveinfo.jsp</result>
+    </action>
+    
+     <action name="leave3" class="leaveaction" method="removeQj">
+    <result name="success">/student/RemoveQJsuccess.jsp</result>
+    <result name="mqingjia">/student/RemoveQJerror.jsp</result>
+    </action>
+    
+    
+    
+     <action name="leave4" class="leaveaction" method="TfindAllleaveinfo">
+    <result name="success">/teacher/Tleave.jsp</result>
+    </action>
+    
+    
+    
+    <action name="leave5" class="leaveaction" method="Tpizhun">
+    <result name="success">/teacher/Tpizhunsuccess.jsp</result>
+     <result name="error">/teacher/PZerror.jsp</result>
+    
+    
+    </action>
+    
+    
+    
+    
+    
+    
+    
+    
+    </package>
+</struts>

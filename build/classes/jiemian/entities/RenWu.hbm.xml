@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 2018-10-30 20:28:37 by Hibernate Tools 3.4.0.CR1 -->
+<hibernate-mapping>
+    <class name="jiemian.entities.RenWu" table="RENWU">
+        <id name="ID" type="int">
+            <column name="ID" />
+            <generator class="native" />
+        </id>
+        <property name="xueyuan" type="java.lang.String">
+            <column name="XUEYUAN" />
+        </property>
+        <property name="zhuanye" type="java.lang.String">
+            <column name="ZHUANYE" />
+        </property>
+        <property name="banji" type="java.lang.String">
+            <column name="BANJI" />
+        </property>
+        <property name="renwu" type="java.lang.String">
+            <column name="RENWU" />
+        </property>
+    </class>
+</hibernate-mapping>

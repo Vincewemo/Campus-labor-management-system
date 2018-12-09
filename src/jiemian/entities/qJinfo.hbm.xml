@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 2018-11-4 18:37:17 by Hibernate Tools 3.4.0.CR1 -->
+<hibernate-mapping>
+    <class name="jiemian.entities.qJinfo" table="QJINFO">
+        <id name="qid" type="int">
+            <column name="QID" />
+            <generator class="native" />
+        </id>
+        <property name="xsname" type="java.lang.String">
+            <column name="XSNAME" />
+        </property>
+        <property name="liyou" type="java.lang.String">
+            <column name="LIYOU" />
+        </property>
+        <property name="qjheshi" type="java.lang.String">
+            <column name="QJHESHI" />
+        </property>
+        <property name="xind" type="java.lang.String">
+            <column name="XIND" />
+        </property>
+    </class>
+</hibernate-mapping>

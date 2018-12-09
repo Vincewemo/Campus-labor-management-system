@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 2018-10-31 11:34:10 by Hibernate Tools 3.4.0.CR1 -->
+<hibernate-mapping>
+    <class name="jiemian.entities.Ginfo" table="GINFO">
+        <id name="GinfoID" type="int">
+            <column name="GINFOID" />
+            <generator class="native" />
+        </id>
+        <property name="Gphone" type="java.lang.String">
+            <column name="GPHONE" />
+        </property>
+        <property name="Gbanji" type="int">
+            <column name="GBANJI" />
+        </property>
+        <property name="Gxueyuan" type="java.lang.String">
+            <column name="GXUEYUAN" />
+        </property>
+        <property name="Gzhuanye" type="java.lang.String">
+            <column name="GZHUANYE" />
+        </property>
+        <property name="Gxuehao" type="java.lang.String">
+            <column name="GXUEHAO" />
+        </property>
+    </class>
+</hibernate-mapping>
